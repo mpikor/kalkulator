@@ -96,7 +96,7 @@ const addNumber = (number) => {
 
 
 const deleteNumber = () => {
-    current = current.slice(0, -1)
+    current = current.toString().slice(0, -1)
 }
 
 

@@ -7,19 +7,30 @@
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0;
     margin: 0;
     background: #b31dd8;
+    height: 100vh;
+}
+
+@media (max-width: 1023px) {
+    body {
+        align-items: flex-end;
+    }
 }
 
 .calculator {
-    margin: 25px;
     display: grid;
     justify-content: center;
     align-content: center;
-    grid-template-columns: repeat(5, 80px);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: minmax(120px, auto) repeat(5, 80px);
-    min-height: 70vh;
+    margin: 25px auto 0;
+    max-width: 400px;
+    width: 100%;
 }
 
 .result {
